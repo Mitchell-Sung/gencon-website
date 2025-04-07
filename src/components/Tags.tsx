@@ -1,5 +1,7 @@
-import { forwardRef } from 'react';
+import { forwardRef, ImgHTMLAttributes } from 'react';
 import Box, { BoxProps } from '@mui/material/Box';
+
+type ImageProps = ImgHTMLAttributes<HTMLImageElement>;
 
 export function Main(props: BoxProps) {
     return (
@@ -56,3 +58,7 @@ export const Item = forwardRef<HTMLElement, BoxProps>((props, ref) => {
         </Box>
     );
 });
+
+export function Img(props: ImageProps) {
+    return <img loading='lazy' {...props} />;
+}
