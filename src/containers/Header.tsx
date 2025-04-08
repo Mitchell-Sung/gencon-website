@@ -1,13 +1,12 @@
-import { NavButton } from '../components';
+import { HeaderMarquee, NavButton } from '../components';
 import { Container, Section, Img, Content } from '../components/Tags';
-import { Button, Chip, Paper, Typography } from '../components/mui';
+import { Button } from '../components/mui';
 import useFirstPathSegment from '../hooks/useFirstPathSegment';
 import { navBtnData } from '../data';
 import logo_01 from '../assets/logo_01.png';
 import useNavigateTo from '../hooks/useNavigateTo';
 import { ROUTE } from '../consts';
 import st from '../styles/containers/Header.module.css';
-import { motion } from 'framer-motion';
 
 function Header() {
     const pathname = useFirstPathSegment();
@@ -21,107 +20,7 @@ function Header() {
                 alt='Logo'
                 onClick={() => navigateToUrl(ROUTE.ROOT)}
             />
-            <Section
-                sx={{
-                    // border: 'solid 1px red',
-                    width: '100%',
-                    overflow: 'hidden',
-                }}
-            >
-                <motion.div
-                    animate={{ x: ['0%', '-70%'] }}
-                    transition={{
-                        repeat: Infinity,
-                        repeatType: 'loop',
-                        duration: 10,
-                        ease: 'linear',
-                    }}
-                    style={{
-                        display: 'inline-flex',
-                        gap: '1rem',
-                        alignItems: 'center',
-                    }}
-                >
-                    <Chip
-                        label={
-                            <Typography
-                                component='span'
-                                variant='body2'
-                                style={{
-                                    letterSpacing: '0.1rem',
-                                }}
-                            >
-                                Location: Alberta, Canada
-                            </Typography>
-                        }
-                    />
-                    <Chip
-                        label={
-                            <Typography
-                                component='span'
-                                variant='body2'
-                                style={{
-                                    letterSpacing: '0.1rem',
-                                }}
-                            >
-                                Tel: 587-338-0250
-                            </Typography>
-                        }
-                    />
-                    <Chip
-                        label={
-                            <Typography
-                                component='span'
-                                variant='body2'
-                                style={{
-                                    letterSpacing: '0.1rem',
-                                }}
-                            >
-                                Email: info@genconelectric.ca
-                            </Typography>
-                        }
-                    />
-                    <Chip
-                        label={
-                            <Typography
-                                component='span'
-                                variant='body2'
-                                style={{
-                                    letterSpacing: '0.1rem',
-                                }}
-                            >
-                                Master Electrician License
-                            </Typography>
-                        }
-                    />
-                    <Chip
-                        label={
-                            <Typography
-                                component='span'
-                                variant='body2'
-                                style={{
-                                    letterSpacing: '0.1rem',
-                                }}
-                            >
-                                Residential Electrical Expert
-                            </Typography>
-                        }
-                    />
-                    <Chip
-                        label={
-                            <Typography
-                                component='span'
-                                variant='body2'
-                                style={{
-                                    letterSpacing: '0.1rem',
-                                }}
-                            >
-                                Commercial Electrical Expert
-                            </Typography>
-                        }
-                    />
-                </motion.div>
-            </Section>
+            <HeaderMarquee />
             <Section className={st.section}>
                 <Content className={st.content}>
                     {navBtnData.map((button, index) => (
