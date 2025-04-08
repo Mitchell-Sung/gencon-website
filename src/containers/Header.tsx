@@ -1,45 +1,20 @@
-import { HeaderMarquee, NavButton } from '../components';
-import { Container, Section, Img, Content } from '../components/Tags';
-import { Button } from '../components/mui';
-import useFirstPathSegment from '../hooks/useFirstPathSegment';
-import { navBtnData } from '../data';
-import logo_01 from '../assets/logo_01.png';
-import useNavigateTo from '../hooks/useNavigateTo';
 import { ROUTE } from '../consts';
+import { Container } from '../components/Tags';
+import {
+    ButtonCallToAction,
+    HeaderLogo,
+    HeaderMarquee,
+    HeaderNavButtons,
+} from '../components';
 import st from '../styles/containers/Header.module.css';
 
 function Header() {
-    const pathname = useFirstPathSegment();
-    const navigateToUrl = useNavigateTo();
-
     return (
         <Container className={st.container}>
-            <Img
-                className={st.logo}
-                src={logo_01}
-                alt='Logo'
-                onClick={() => navigateToUrl(ROUTE.ROOT)}
-            />
+            <HeaderLogo />
             <HeaderMarquee />
-            <Section className={st.section}>
-                <Content className={st.content}>
-                    {navBtnData.map((button, index) => (
-                        <NavButton
-                            key={index}
-                            label={button.label}
-                            link={button.link}
-                            isActive={pathname === button.link}
-                        />
-                    ))}
-                </Content>
-                <Button
-                    className={st.button}
-                    variant='contained'
-                    onClick={() => navigateToUrl(ROUTE.CONTACT)}
-                >
-                    Contact
-                </Button>
-            </Section>
+            <HeaderNavButtons />
+            <ButtonCallToAction label='Contact' link={ROUTE.CONTACT} />
         </Container>
     );
 }

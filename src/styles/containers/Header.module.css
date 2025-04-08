@@ -10,19 +10,9 @@
         cursor: pointer;
     }
 
-    & .section {
-        display: flex;
-        justify-content: space-between;
-        gap: 3rem;
-
-        & .content {
-            display: flex;
-        }
-
-        & .button {
-            width: 100px;
-            text-transform: none;
-            font-size: 1.25rem;
-        }
+    & .button {
+        width: 100px;
+        text-transform: none;
+        font-size: 1.25rem;
     }
 }

@@ -1,8 +1,8 @@
 .component {
     & .button {
-        width: 110px;
+        width: 7rem;
         color: var(--cl-text-secondary);
         text-transform: none;
-        font-size: 1.25rem;
+        font-size: 1.2rem;
     }
 }
