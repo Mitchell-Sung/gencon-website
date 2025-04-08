@@ -1,4 +1,4 @@
-.container {
+.header {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -24,3 +24,8 @@
         }
     }
 }
+
+/* height: 4px;
+  border: none;
+  background-color: #ff3b3b;
+  border-radius: 2px; */
