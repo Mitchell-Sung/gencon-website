@@ -1,40 +1,26 @@
 .container {
     display: flex;
     justify-content: space-between;
-    padding: 0.75rem;
+    align-items: center;
+    padding: 0.5rem 1rem;
 
     & .logo {
-        width: 17.5rem;
+        width: 15rem;
+    }
+
+    & .section {
+        display: flex;
+        justify-content: space-between;
+        gap: 4rem;
+
+        & .content {
+            display: flex;
+        }
+
+        & .button {
+            width: 110px;
+            text-transform: none;
+            font-size: 1.25rem;
+        }
     }
 }
-
-/* border: solid 1px red; */
-
-/* .header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 1rem;
-    height: 60px;
-    background-color: #f8f8f8;
-    border-bottom: 1px solid #ddd;
-}
-
-.logo {
-    flex: 1;
-    font-size: 1.5rem;
-    font-weight: bold;
-}
-
-.nav {
-    flex: 2;
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
-}
-
-.login {
-    flex: 1;
-    display: flex;
-    justify-content: flex-end;
-} */
