@@ -1,6 +1,6 @@
 import { NavButton } from '../components';
 import { Container, Section, Img, Content } from '../components/Tags';
-import { Button, Chip, Typography } from '../components/mui';
+import { Button, Chip, Paper, Typography } from '../components/mui';
 import useFirstPathSegment from '../hooks/useFirstPathSegment';
 import { navBtnData } from '../data';
 import logo_01 from '../assets/logo_01.png';
@@ -20,7 +20,7 @@ function Header() {
                 alt='Logo'
                 onClick={() => navigateToUrl(ROUTE.ROOT)}
             />
-            <Section sx={{ border: 'solid 1px red' }}>
+            <Paper sx={{ border: 'solid 1px red' }}>
                 <Chip
                     label={
                         <Typography
@@ -99,7 +99,7 @@ function Header() {
                         </Typography>
                     }
                 />
-            </Section>
+            </Paper>
             <Section className={st.section}>
                 <Content className={st.content}>
                     {navBtnData.map((button, index) => (
