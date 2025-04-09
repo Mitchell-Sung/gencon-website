@@ -5,7 +5,6 @@ import {
     CardContent,
     CardHeader,
     CardMedia,
-    Paper,
     Typography,
 } from '../components/mui';
 import { Content, Img, Page, Section } from '../components/Tags';
@@ -119,7 +118,7 @@ function Home() {
                 />
             </Section>
             <Section sx={{ display: 'flex', gap: '1rem' }}>
-                <Card sx={{ borderRadius: '10px' }}>
+                <Card sx={{ borderRadius: '10px', width: '300px' }}>
                     <CardHeader title='Residential Electrical Services' />
                     <CardMedia>
                         <Img
@@ -129,7 +128,13 @@ function Home() {
                         />
                     </CardMedia>
                     <CardContent>
-                        <Typography></Typography>
+                        <Typography>
+                            We provide safe, reliable, and code-compliant
+                            electrical solutions for your home. From new wiring
+                            and panel upgrades to lighting installation and
+                            troubleshooting, our certified electricians ensure
+                            every job is done right the first time.
+                        </Typography>
                     </CardContent>
                 </Card>
             </Section>
