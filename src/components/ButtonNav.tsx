@@ -2,7 +2,6 @@ import { Button } from './mui';
 import useNavigateTo from '../hooks/useNavigateTo';
 import { Component } from './Tags';
 import { GenDivider } from './';
-import st from '../styles/components/NavButton.module.css';
 
 type Props = {
     label: string;
@@ -14,9 +13,14 @@ function NavButton({ label, link, isActive }: Props) {
     const navigateToUrl = useNavigateTo();
 
     return (
-        <Component className={st.component}>
+        <Component>
             <Button
-                className={st.button}
+                sx={{
+                    width: '100px',
+                    color: 'var(--cl-text-secondary)',
+                    textTransform: 'none',
+                    fontSize: '1.1rem',
+                }}
                 variant='text'
                 onClick={() => navigateToUrl(link)}
             >

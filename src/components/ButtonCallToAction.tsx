@@ -12,7 +12,8 @@ function ButtonCallToAction({ label, link }: Props) {
     return (
         <Button
             sx={{
-                width: '15rem',
+                width: '100px',
+                borderRadius: '5px',
                 background:
                     'linear-gradient(315deg, var(--cl-ci-grey) 20%, var(--cl-ci-red) 50%, var(--cl-ci-blue) 80%)',
                 backgroundSize: '400% 400%',

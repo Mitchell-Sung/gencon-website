@@ -8,7 +8,7 @@ function HeaderLogo() {
 
     return (
         <Img
-            style={{ width: '15rem', cursor: 'pointer' }}
+            style={{ width: '12.5rem', cursor: 'pointer' }}
             src={logo_01}
             alt='Logo'
             onClick={() => navigateToUrl(ROUTE.ROOT)}
