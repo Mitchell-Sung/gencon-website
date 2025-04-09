@@ -15,6 +15,12 @@ import temp_01 from '../assets/temp_01.jpg';
 import { ElectricalServicesIcon } from '../components/mui/Icons';
 import useNavigateTo from '../hooks/useNavigateTo';
 import { ROUTE } from '../consts';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { EffectCards } from 'swiper/modules';
+import { serviceListData } from '../data';
+// import 'swiper/css/effect-cards';
+import 'swiper/modules/effect-cards/effect-cards.css';
+// import 'swiper/css';
 
 function Home() {
     const navigateToUrl = useNavigateTo();
@@ -118,25 +124,35 @@ function Home() {
                 />
             </Paper>
             <Section sx={{ display: 'flex', gap: '1rem' }}>
-                <Card sx={{ borderRadius: '10px' }}>
-                    <CardHeader title='Residential Electrical Services' />
-                    <CardMedia>
-                        <Img
-                            src={temp_01}
-                            alt='Service Image'
-                            style={{ width: '100%' }}
-                        />
-                    </CardMedia>
-                    <CardContent>
-                        <Typography>
-                            We provide safe, reliable, and code-compliant
-                            electrical solutions for your home. From new wiring
-                            and panel upgrades to lighting installation and
-                            troubleshooting, our certified electricians ensure
-                            every job is done right the first time.
-                        </Typography>
-                    </CardContent>
-                </Card>
+                <Swiper
+                    effect={'cards'}
+                    grabCursor={true}
+                    modules={[EffectCards]}
+                    style={{
+                        width: '17rem',
+                        height: '29rem',
+                        display: 'flex',
+                        justifyContent: 'center',
+                    }}
+                >
+                    {serviceListData.map((service, index) => (
+                        <SwiperSlide key={index}>
+                            <Card key={index} sx={{ borderRadius: '10px' }}>
+                                <CardHeader title={service.title} />
+                                <CardMedia>
+                                    <Img
+                                        src={temp_01}
+                                        alt='Service Image'
+                                        style={{ width: '100%' }}
+                                    />
+                                </CardMedia>
+                                <CardContent>
+                                    <Typography>{service.desc}</Typography>
+                                </CardContent>
+                            </Card>
+                        </SwiperSlide>
+                    ))}
+                </Swiper>
             </Section>
         </Page>
     );
