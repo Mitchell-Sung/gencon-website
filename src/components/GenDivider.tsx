@@ -4,7 +4,8 @@ function GenDivider() {
     return (
         <Divider
             sx={{
-                width: '100%',
+                width: '90%',
+                margin: '0 auto',
                 height: '0.25rem',
                 borderRadius: '10px',
                 background:

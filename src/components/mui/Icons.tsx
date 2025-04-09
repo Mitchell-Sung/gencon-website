@@ -1,2 +1,1 @@
-// export { default as LocalPhoneIcon } from '@mui/icons-material/LocalPhone';
-// export { default as ContactPhoneIcon } from '@mui/icons-material/ContactPhone';
+export { default as ElectricalServicesIcon } from '@mui/icons-material/ElectricalServices';
