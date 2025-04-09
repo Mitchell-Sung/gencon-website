@@ -62,3 +62,11 @@ export const Item = forwardRef<HTMLElement, BoxProps>((props, ref) => {
 export function Img(props: ImageProps) {
     return <img loading='lazy' {...props} />;
 }
+
+export function Span(props: BoxProps) {
+    return (
+        <Box component='span' {...props}>
+            {props.children}
+        </Box>
+    );
+}

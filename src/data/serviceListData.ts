@@ -22,7 +22,6 @@ const serviceListData: ServiceListData[] = [
         summary: `Reliable electrical work for your business — fast, safe, and built to last. We power everything from offices to retail stores.`,
         description:
             'We deliver efficient, scalable electrical solutions for commercial spaces. From office buildings and retail stores to restaurants and warehouses, our team handles wiring, lighting, panel upgrades, and maintenance all with minimal disruption to your business operations.',
-
         options: [
             `Expert service for new builds, renovations, or maintenance in commercial spaces.`,
             `Keep your business running smoothly with our trusted electrical solutions.`,
@@ -34,7 +33,6 @@ const serviceListData: ServiceListData[] = [
         summary: `Industrial-strength electrical solutions for factories, warehouses, and production lines — built for safety, performance, and reliability.`,
         description:
             'We specialize in high-demand electrical systems for factories, plants, and industrial facilities. From heavy machinery wiring to power distribution and control systems, we provide safe, durable, and code-compliant solutions that keep your operations running at full capacity.',
-
         options: [
             `Full-service electrical work for heavy-duty equipment and high-voltage systems.`,
             `Minimize downtime with expert industrial wiring and maintenance.`,
@@ -46,7 +44,6 @@ const serviceListData: ServiceListData[] = [
         summary: `Detailed safety checks for your home or business — we make sure everything is up to code and working properly.`,
         description:
             'We conduct thorough electrical inspections to ensure your systems meet safety codes and perform efficiently. Whether for new installations, renovations, or routine checkups, our certified electricians identify potential issues before they become costly problems.',
-
         options: [
             `Ensure your electrical system is safe, efficient, and code-compliant.`,
             `Expert inspections for homes, offices, and industrial facilities.`,
@@ -69,7 +66,6 @@ const serviceListData: ServiceListData[] = [
         summary: `Fast, safe solutions for electrical problems — we find the issue and fix it right the first time.`,
         description:
             'We quickly diagnose and fix electrical issues — from flickering lights and faulty outlets to complex wiring problems. Our licensed electricians provide safe, efficient repairs to restore power and peace of mind, whether at home or on the job site.',
-
         options: [
             `Expert fault-finding and repairs for residential, commercial, and industrial systems.`,
             `Don’t guess — let our professionals locate and solve your electrical issues.`,
