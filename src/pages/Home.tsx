@@ -2,7 +2,6 @@ import { TypeAnimation } from 'react-type-animation';
 import {
     Button,
     Card,
-    CardActions,
     CardContent,
     CardHeader,
     CardMedia,
@@ -15,15 +14,10 @@ import temp_01 from '../assets/temp_01.jpg';
 import { ElectricalServicesIcon } from '../components/mui/Icons';
 import useNavigateTo from '../hooks/useNavigateTo';
 import { ROUTE } from '../consts';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import { EffectCards } from 'swiper/modules';
-import { serviceListData } from '../data';
-// import 'swiper/css/effect-cards';
-import 'swiper/modules/effect-cards/effect-cards.css';
-// import 'swiper/css';
 
 function Home() {
     const navigateToUrl = useNavigateTo();
+
     return (
         <Page
             sx={{
@@ -34,10 +28,11 @@ function Home() {
                 gap: '2.5rem',
             }}
         >
-            <Paper
+            <Section
                 sx={{
                     display: 'flex',
-                    padding: '1.5rem',
+                    // padding: '1.5rem',
+                    padding: '1rem 0rem',
                     gap: '2.5rem',
                     flexWrap: 'nowrap',
                     overflow: 'hidden',
@@ -122,37 +117,21 @@ function Home() {
                     src={home_01}
                     alt='Home Image'
                 />
-            </Paper>
+            </Section>
             <Section sx={{ display: 'flex', gap: '1rem' }}>
-                <Swiper
-                    effect={'cards'}
-                    grabCursor={true}
-                    modules={[EffectCards]}
-                    style={{
-                        width: '17rem',
-                        height: '29rem',
-                        display: 'flex',
-                        justifyContent: 'center',
-                    }}
-                >
-                    {serviceListData.map((service, index) => (
-                        <SwiperSlide key={index}>
-                            <Card key={index} sx={{ borderRadius: '10px' }}>
-                                <CardHeader title={service.title} />
-                                <CardMedia>
-                                    <Img
-                                        src={temp_01}
-                                        alt='Service Image'
-                                        style={{ width: '100%' }}
-                                    />
-                                </CardMedia>
-                                <CardContent>
-                                    <Typography>{service.desc}</Typography>
-                                </CardContent>
-                            </Card>
-                        </SwiperSlide>
-                    ))}
-                </Swiper>
+                <Card sx={{ borderRadius: '10px' }}>
+                    <CardHeader title='Residential Electrical Services' />
+                    <CardMedia>
+                        <Img
+                            src={temp_01}
+                            alt='Service Image'
+                            style={{ width: '100%' }}
+                        />
+                    </CardMedia>
+                    <CardContent>
+                        <Typography></Typography>
+                    </CardContent>
+                </Card>
             </Section>
         </Page>
     );
