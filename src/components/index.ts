@@ -19,3 +19,5 @@ export { default as HeroSubHeadlineTypo } from './HeroSubHeadlineTypo';
 export { default as UnderLineTitle } from './UnderLineTitle';
 
 export { default as TypoStartIcon } from './TypoStartIcon';
+
+export { default as FooterContactItem } from './FooterContactItem';

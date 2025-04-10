@@ -4,3 +4,4 @@ export { default as serviceListData } from './serviceListData';
 export { default as serviceGroupListData } from './serviceGroupListData';
 export { default as homeHeroMainData } from './homeHeroMainData';
 export { default as homeHeroServiceData } from './homeHeroServiceData';
+export { default as genconInfo } from './genconInfo';

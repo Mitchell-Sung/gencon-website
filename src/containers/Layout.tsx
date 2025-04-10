@@ -1,5 +1,5 @@
 import { Outlet } from 'react-router-dom';
-import { Header } from './';
+import { Header, Footer } from './';
 import { Container, Section } from '../components/Tags';
 import { Divider } from '../components/mui';
 
@@ -11,6 +11,8 @@ function Layout() {
             <Section sx={{ marginTop: '1rem' }}>
                 <Outlet />
             </Section>
+            <Divider />
+            <Footer />
         </Container>
     );
 }

@@ -1,4 +1,4 @@
-import { HomeHeroMain, HomeHeroService } from '../containers';
+import { HomeHeroMain, HomeHeroProject, HomeHeroService } from '../containers';
 import { Page } from '../components/Tags';
 
 function Home() {
@@ -15,6 +15,7 @@ function Home() {
         >
             <HomeHeroMain />
             <HomeHeroService />
+            <HomeHeroProject />
         </Page>
     );
 }
