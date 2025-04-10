@@ -31,8 +31,9 @@ function HomeHeroMain() {
                     sx={{
                         display: 'flex',
                         flexDirection: 'column',
-                        gap: '1rem',
+                        gap: '1.5rem',
                         flex: '0 0 55%',
+                        justifyContent: 'center',
                     }}
                 >
                     <HeroOutlinedTypo label={homeHeroMainData.title} />

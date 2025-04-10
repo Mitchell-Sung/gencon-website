@@ -5,3 +5,5 @@ export { default as serviceGroupListData } from './serviceGroupListData';
 export { default as homeHeroMainData } from './homeHeroMainData';
 export { default as homeHeroServiceData } from './homeHeroServiceData';
 export { default as genconInfo } from './genconInfo';
+
+export { default as homeHeroServiceCardData } from './HomeHeroServiceCardData';
