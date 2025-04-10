@@ -7,3 +7,5 @@ export { default as homeHeroServiceData } from './homeHeroServiceData';
 export { default as genconInfo } from './genconInfo';
 
 export { default as homeHeroServiceCardData } from './HomeHeroServiceCardData';
+
+export { default as homeHeroProjectImgData } from './homeHeroProjectImgData';

@@ -12,3 +12,9 @@ function Projects() {
 }
 
 export default Projects;
+// const homeHeroProjectData = {
+//     title: `What We've Built Together`,
+//     headline: ['Powerful Projects,', 'Proven Results.'],
+//     subHeadline: `From residential upgrades to large-scale commercial installations, our portfolio reflects a commitment to quality and precision that speaks for itself.`,
+//     buttonLabel: 'View all projects',
+// };
