@@ -47,9 +47,9 @@ function HomeHeroMain() {
                     />
                 </Content>
                 <Img
-                    style={{ width: '100%', borderRadius: '10px' }}
                     src={home_01}
                     alt='Home Image'
+                    style={{ width: '100%', borderRadius: '10px' }}
                 />
             </Section>
         </Container>

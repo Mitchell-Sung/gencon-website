@@ -1,20 +1,35 @@
-import { homeHeroProjectImgData } from '../data';
-import { Container } from '../components/Tags';
-import { UnderLineTitle } from '../components';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { EffectCoverflow, Pagination, Navigation } from 'swiper/modules';
+import { homeHeroProjectImgData } from '../data';
+import { Container, Content } from '../components/Tags';
+import { ButtonLearnMore, TitleSection } from '../components';
 import 'swiper/css';
 import 'swiper/css/effect-coverflow';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 import '../styles/Swiper.css';
+import { ROUTE } from '../consts';
+import { VisibilityIcon } from '../components/mui/Icons';
 
 function HomeHeroProject() {
     return (
         <Container
             sx={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}
         >
-            <UnderLineTitle width='100px' height='7px' />
+            <Content
+                sx={{
+                    display: 'flex',
+                    justifyContent: 'space-between',
+                    alignContent: 'center',
+                }}
+            >
+                <TitleSection label="What We've Built" />
+                <ButtonLearnMore
+                    label='View All Projects'
+                    link={ROUTE.PROJECTS}
+                    icon={<VisibilityIcon />}
+                />
+            </Content>
             <Swiper
                 effect={'coverflow'}
                 grabCursor={true}

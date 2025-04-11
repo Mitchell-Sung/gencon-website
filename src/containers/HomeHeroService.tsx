@@ -1,13 +1,13 @@
 import { homeHeroServiceCardData } from '../data';
 import { Container, Content } from '../components/Tags';
-import { HomeHeroServiceCard, UnderLineTitle } from '../components';
+import { HomeHeroServiceCard, TitleSection } from '../components';
 
 function HomeHeroService() {
     return (
         <Container
             sx={{ display: 'flex', flexDirection: 'column', gap: '1.5rem' }}
         >
-            <UnderLineTitle width='100px' height='7px' />
+            <TitleSection label='What We Offer' />
             <Content
                 sx={{
                     display: 'flex',

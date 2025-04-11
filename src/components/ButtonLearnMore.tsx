@@ -3,7 +3,7 @@ import useNavigateTo from '../hooks/useNavigateTo';
 import { Button } from './mui';
 
 type Props = {
-    width: string;
+    width?: string;
     label: string;
     link: string;
     icon: JSX.Element;

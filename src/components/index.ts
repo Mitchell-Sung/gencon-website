@@ -21,3 +21,5 @@ export { default as UnderLineTitle } from './UnderLineTitle';
 export { default as TypoStartIcon } from './TypoStartIcon';
 
 export { default as FooterContactItem } from './FooterContactItem';
+
+export { default as TitleSection } from './TitleSection';
