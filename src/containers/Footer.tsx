@@ -1,4 +1,4 @@
-import { genconInfo } from '../data';
+import { companyData } from '../data';
 import { Container, Section } from '../components/Tags';
 import { FooterContactItem } from '../components';
 import { Typography } from '../components/mui';
@@ -16,7 +16,7 @@ function Footer() {
             }}
         >
             <Typography sx={{ fontSize: '1rem', fontWeight: '500' }}>
-                {genconInfo.name}
+                {companyData.name}
             </Typography>
             <Section
                 sx={{
@@ -26,16 +26,16 @@ function Footer() {
                 }}
             >
                 <FooterContactItem
-                    label={genconInfo.phoneLabel}
-                    info={genconInfo.phone}
+                    label={companyData.phoneLabel}
+                    info={companyData.phone}
                 />
                 <FooterContactItem
-                    label={genconInfo.emailLabel}
-                    info={genconInfo.email}
+                    label={companyData.emailLabel}
+                    info={companyData.email}
                 />
                 <FooterContactItem
-                    label={genconInfo.locationLabel}
-                    info={genconInfo.location}
+                    label={companyData.locationLabel}
+                    info={companyData.location}
                 />
             </Section>
             <Section
@@ -44,8 +44,10 @@ function Footer() {
                     flexDirection: 'column',
                 }}
             >
-                <Typography variant='caption'>{genconInfo.copy}</Typography>
-                <Typography variant='caption'>{genconInfo.designed}</Typography>
+                <Typography variant='caption'>{companyData.copy}</Typography>
+                <Typography variant='caption'>
+                    {companyData.designed}
+                </Typography>
             </Section>
         </Container>
     );

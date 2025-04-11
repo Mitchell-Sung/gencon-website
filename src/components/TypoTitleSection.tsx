@@ -6,7 +6,7 @@ type Props = {
     label: string;
 };
 
-function TitleSection({ label }: Props) {
+function TypoTitleSection({ label }: Props) {
     return (
         <Component
             sx={{
@@ -23,4 +23,4 @@ function TitleSection({ label }: Props) {
     );
 }
 
-export default TitleSection;
+export default TypoTitleSection;

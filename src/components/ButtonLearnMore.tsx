@@ -1,6 +1,7 @@
 import { JSX } from 'react';
 import useNavigateTo from '../hooks/useNavigateTo';
 import { Button } from './mui';
+import { sx_ButtonLearnMore } from '../styles/buttonSx';
 
 type Props = {
     width?: string;
@@ -19,9 +20,8 @@ function ButtonLearnMore({ width, label, link, icon }: Props) {
             size='large'
             onClick={() => navigateToUrl(link)}
             sx={{
-                textTransform: 'none',
                 width: `${width}`,
-                color: 'var(--cl-ci-blue)',
+                ...sx_ButtonLearnMore,
             }}
         >
             {label}

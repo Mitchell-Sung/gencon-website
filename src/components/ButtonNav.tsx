@@ -1,7 +1,8 @@
 import { Button } from './mui';
 import useNavigateTo from '../hooks/useNavigateTo';
 import { Component } from './Tags';
-import { GenDivider } from './';
+import { UnderLineNavButton } from './';
+import { sx_NavButton } from '../styles/buttonSx';
 
 type Props = {
     label: string;
@@ -15,18 +16,13 @@ function NavButton({ label, link, isActive }: Props) {
     return (
         <Component>
             <Button
-                sx={{
-                    width: '100px',
-                    color: 'var(--cl-text-secondary)',
-                    textTransform: 'none',
-                    fontSize: '1.1rem',
-                }}
+                sx={sx_NavButton}
                 variant='text'
                 onClick={() => navigateToUrl(link)}
             >
                 {label}
             </Button>
-            {isActive && <GenDivider />}
+            {isActive && <UnderLineNavButton />}
         </Component>
     );
 }

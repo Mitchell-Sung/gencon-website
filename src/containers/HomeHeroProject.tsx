@@ -2,7 +2,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { EffectCoverflow, Pagination, Navigation } from 'swiper/modules';
 import { homeHeroProjectImgData } from '../data';
 import { Container, Content } from '../components/Tags';
-import { ButtonLearnMore, TitleSection } from '../components';
+import { ButtonLearnMore, TypoTitleSection } from '../components';
 import 'swiper/css';
 import 'swiper/css/effect-coverflow';
 import 'swiper/css/pagination';
@@ -23,7 +23,7 @@ function HomeHeroProject() {
                     alignContent: 'center',
                 }}
             >
-                <TitleSection label="What We've Built" />
+                <TypoTitleSection label="What We've Built" />
                 <ButtonLearnMore
                     label='View All Projects'
                     link={ROUTE.PROJECTS}

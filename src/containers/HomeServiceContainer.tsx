@@ -1,13 +1,13 @@
 import { homeHeroServiceCardData } from '../data';
 import { Container, Content } from '../components/Tags';
-import { HomeHeroServiceCard, TitleSection } from '../components';
+import { HomeServiceCard, TypoTitleSection } from '../components';
 
-function HomeHeroService() {
+function HomeServiceContainer() {
     return (
         <Container
             sx={{ display: 'flex', flexDirection: 'column', gap: '1.5rem' }}
         >
-            <TitleSection label='What We Offer' />
+            <TypoTitleSection label='What We Offer' />
             <Content
                 sx={{
                     display: 'flex',
@@ -16,11 +16,11 @@ function HomeHeroService() {
                 }}
             >
                 {homeHeroServiceCardData.map((service) => (
-                    <HomeHeroServiceCard key={service.id} service={service} />
+                    <HomeServiceCard key={service.id} service={service} />
                 ))}
             </Content>
         </Container>
     );
 }
 
-export default HomeHeroService;
+export default HomeServiceContainer;

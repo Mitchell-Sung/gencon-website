@@ -14,7 +14,7 @@ type Props = {
     };
 };
 
-function HomeHeroServiceCard({ service }: Props) {
+function HomeServiceCard({ service }: Props) {
     const { title, img, includes } = service;
 
     const navigateToUrl = useNavigateTo();
@@ -82,4 +82,4 @@ function HomeHeroServiceCard({ service }: Props) {
     );
 }
 
-export default HomeHeroServiceCard;
+export default HomeServiceCard;

@@ -8,7 +8,13 @@ function Layout() {
         <Container>
             <Header />
             <Divider />
-            <Section sx={{ marginTop: '1rem' }}>
+            <Section
+                sx={{
+                    width: '70%',
+                    margin: '0 auto',
+                    padding: '3rem 0rem 3rem 0rem',
+                }}
+            >
                 <Outlet />
             </Section>
             <Divider />

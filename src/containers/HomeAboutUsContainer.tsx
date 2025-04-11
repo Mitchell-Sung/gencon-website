@@ -1,22 +1,18 @@
-import { ButtonLearnMore, TitleSection, TypoStartIcon } from '../components';
+import {
+    ButtonLearnMore,
+    TypoTitleSection,
+    TypoStartIcon,
+} from '../components';
 import { CheckCircleIcon, InfoOutlineIcon } from '../components/mui/Icons';
 import { Container, Content, Img, Item, Section } from '../components/Tags';
 import AboutUs from '../assets/AboutUs.jpg';
 import { ROUTE } from '../consts';
-
-const homeAboutUsContainerData: string[] = [
-    'Founded in 2010, we bring over a decade of experience to every project.',
-    'Certified Canadian Master Electrician with top-level safety and skill.',
-    'Grew quickly through quality work and strong referrals.',
-    'Clients return through trust and consistent service.',
-    'High satisfaction and a record of on-time results.',
-    'Skilled at solving complex electrical challenges.',
-];
+import { homeAboutUsContainerData } from '../data';
 
 function HomeAboutUsContainer() {
     return (
-        <Container sx={{ paddingBottom: '2rem' }}>
-            <TitleSection label='Who We Are' />
+        <Container>
+            <TypoTitleSection label='Who We Are' />
             <Section sx={{ display: 'flex', gap: '1.5rem' }}>
                 <Content
                     sx={{

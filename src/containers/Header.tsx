@@ -6,31 +6,16 @@ import {
     HeaderMarquee,
     HeaderNavButtons,
 } from '../components';
+import { sx_Header } from '../styles/headerSx';
 
 function Header() {
     return (
-        <Container
-            sx={{
-                width: '70%',
-                margin: '0 auto',
-                display: 'flex',
-                justifyContent: 'space-between',
-                alignItems: 'center',
-                padding: '0.75rem 0rem',
-                gap: '2rem',
-            }}
-        >
-            <Section
-                sx={{
-                    display: 'flex',
-                    overflow: 'hidden',
-                    gap: '2rem',
-                }}
-            >
+        <Container sx={sx_Header.container}>
+            <Section sx={sx_Header.sectionLogoMarquee}>
                 <HeaderLogo />
                 <HeaderMarquee />
             </Section>
-            <Section sx={{ display: 'flex', gap: '2rem' }}>
+            <Section sx={sx_Header.sectionNavButtons}>
                 <HeaderNavButtons />
                 <ButtonCallToAction label='Contact' link={ROUTE.CONTACT} />
             </Section>

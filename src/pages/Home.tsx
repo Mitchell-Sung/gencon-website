@@ -2,24 +2,16 @@ import {
     HomeAboutUsContainer,
     HomeHeroMain,
     HomeHeroProject,
-    HomeHeroService,
+    HomeServiceContainer,
 } from '../containers';
 import { Page } from '../components/Tags';
+import { sx_Home } from '../styles/homeSx';
 
 function Home() {
     return (
-        <Page
-            sx={{
-                display: 'flex',
-                flexDirection: 'column',
-                width: '70%',
-                margin: '0 auto',
-                gap: '5rem',
-                padding: '1rem 0rem',
-            }}
-        >
+        <Page sx={sx_Home}>
             <HomeHeroMain />
-            <HomeHeroService />
+            <HomeServiceContainer />
             <HomeHeroProject />
             <HomeAboutUsContainer />
         </Page>
