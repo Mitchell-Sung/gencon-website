@@ -1,12 +1,16 @@
-import { Typography } from '../components/mui';
-import { Page } from '../components/Tags';
+import { ContactForm, ContactPanel } from '../containers';
+import { Page, Section } from '../components/Tags';
+import { UnderLineTitle } from '../components';
+import { sx_Contact } from '../styles/contactSx';
 
 function Contact() {
     return (
-        <Page>
-            <Typography variant='h1' gutterBottom>
-                Hello Contact Page
-            </Typography>
+        <Page sx={sx_Contact.page}>
+            <UnderLineTitle width='100px' height='7px' />
+            <Section sx={sx_Contact.section}>
+                <ContactPanel />
+                <ContactForm />
+            </Section>
         </Page>
     );
 }

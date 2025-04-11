@@ -11,7 +11,7 @@ import {
 } from '../components';
 import { ElectricalServicesIcon } from '../components/mui/Icons';
 
-function HomeHeroMain() {
+function HomeMainContainer() {
     return (
         <Container
             sx={{
@@ -56,4 +56,4 @@ function HomeHeroMain() {
     );
 }
 
-export default HomeHeroMain;
+export default HomeMainContainer;

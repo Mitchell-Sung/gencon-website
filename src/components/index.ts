@@ -29,3 +29,5 @@ export { default as TypoStartIcon } from './TypoStartIcon';
 export { default as FooterContactItem } from './FooterContactItem';
 
 export { default as TypoTitleSection } from './TypoTitleSection';
+
+export { default as TextFieldContactForm } from './TextFieldContactForm';

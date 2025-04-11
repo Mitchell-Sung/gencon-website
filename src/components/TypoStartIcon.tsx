@@ -5,8 +5,8 @@ import { TypographyProps } from '@mui/material/Typography';
 
 type Props = {
     label: string;
-    variant: TypographyProps['variant'];
-    fontWeight: string;
+    variant?: TypographyProps['variant'];
+    fontWeight?: string;
     icon: JSX.Element;
 };
 

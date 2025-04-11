@@ -1,6 +1,6 @@
 import {
     HomeAboutUsContainer,
-    HomeHeroMain,
+    HomeMainContainer,
     HomeHeroProject,
     HomeServiceContainer,
 } from '../containers';
@@ -10,7 +10,7 @@ import { sx_Home } from '../styles/homeSx';
 function Home() {
     return (
         <Page sx={sx_Home}>
-            <HomeHeroMain />
+            <HomeMainContainer />
             <HomeServiceContainer />
             <HomeHeroProject />
             <HomeAboutUsContainer />

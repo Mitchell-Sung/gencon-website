@@ -9,6 +9,7 @@ import MuiCardHeader, { CardHeaderProps } from '@mui/material/CardHeader';
 import MuiCardMedia, { CardMediaProps } from '@mui/material/CardMedia';
 import MuiCardContent, { CardContentProps } from '@mui/material/CardContent';
 import MuiCardActions, { CardActionsProps } from '@mui/material/CardActions';
+import MuiTextField, { TextFieldProps } from '@mui/material/TextField';
 
 export function Button(props: ButtonProps) {
     return <MuiButton {...props}>{props.children}</MuiButton>;
@@ -30,10 +31,15 @@ export function Typography(props: TypographyProps) {
     return <MuiTypography {...props}>{props.children}</MuiTypography>;
 }
 
+export function TextField(props: TextFieldProps) {
+    return <MuiTextField {...props}>{props.children}</MuiTextField>;
+}
+
 export function Tooltip(props: TooltipProps) {
     return <MuiTooltip {...props}>{props.children}</MuiTooltip>;
 }
 
+// Card
 export function Card(props: CardProps) {
     return <MuiCard {...props}>{props.children}</MuiCard>;
 }

@@ -8,3 +8,5 @@ export { default as homeHeroServiceData } from './homeHeroServiceData';
 export { default as homeHeroServiceCardData } from './homeHeroServiceCardData';
 export { default as homeHeroProjectImgData } from './homeHeroProjectImgData';
 export { default as homeAboutUsContainerData } from './homeAboutUsContainerData';
+
+export { default as contactData } from './contactData';
